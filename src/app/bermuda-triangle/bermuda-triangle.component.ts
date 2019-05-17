@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import L from 'leaflet';
-import { BermudaTriangleModel } from '../../shared/models/bermuda-triangle.model';
+import { BermudaTriangleModel } from '../shared/models/bermuda-triangle.model';
 
 @Component({
   selector: 'app-bermuda-triangle',
