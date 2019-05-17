@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { BermudaTriangleComponent } from './bermuda-triangle/bermuda-triangle.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchOnMapComponent } from './search-on-map/search-on-map.component';
+import { MallsOnBrazilFederalDistrictComponent } from './malls-on-brazil-federal-district/malls-on-brazil-federal-district.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SearchOnMapComponent } from './search-on-map/search-on-map.component';
     ExampleComponent,
     BermudaTriangleComponent,
     SearchOnMapComponent,
+    MallsOnBrazilFederalDistrictComponent,
   ],
   imports: [
     BrowserModule,
