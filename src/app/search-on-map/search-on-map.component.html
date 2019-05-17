@@ -1,0 +1,16 @@
+<div>
+  <form>
+    <div class="form-group">
+      <label for="latitude">Latitude</label>
+      <input [value]="latitude" class="form-control" id="latitude" placeholder="Ex: -15.79350550">
+    </div>
+    <div class="form-group">
+      <label for="longitude">Longitude</label>
+      <input [value]="longitude" class="form-control" id="longitude" placeholder="Ex: -47.88155210">
+    </div>
+    <div class="form-group">
+      <a class="form-control btn-success" (click)="searchOnMap()">Search on Map</a>
+    </div>
+  </form>
+</div>
+<div id="map"></div>
