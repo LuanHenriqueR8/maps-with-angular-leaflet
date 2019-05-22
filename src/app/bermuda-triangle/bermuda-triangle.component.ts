@@ -43,7 +43,9 @@ export class BermudaTriangleComponent implements OnInit {
       [this.bermudaTriangle.points[0].latitude, this.bermudaTriangle.points[0].longitude],
       [this.bermudaTriangle.points[1].latitude, this.bermudaTriangle.points[1].longitude],
       [this.bermudaTriangle.points[2].latitude, this.bermudaTriangle.points[2].longitude]
-    ]).addTo(this.map);
+    ])
+      /** adding the informations on map */
+      .addTo(this.map);
 
     /** applying a zoom on map */
     this.map.setZoom(4);
