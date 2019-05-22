@@ -39,10 +39,17 @@ export class MallsOnBrazilFederalDistrictComponent implements OnInit {
 
     /** creation on a point marker on the map */
     this.malls.forEach(item => {
-      L.marker([item.latitude, item.longitude]).addTo(this.map);
+      L.marker([item.latitude, item.longitude])
+
+        /** binding the popup on the marker, it can see with a click */
+        .bindPopup(item.name)
+        .Control.GlobeMiniMap()
+
+        /** adding the informations on map */
+        .addTo(this.map);
     });
 
     /** applying a zoom on map */
-    this.map.setZoom(9);
+    this.map.setZoom(11);
   }
 }

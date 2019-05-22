@@ -43,7 +43,10 @@ export class SearchOnMapComponent implements OnInit {
     this.map = L.map('map', {center: latlng, zoom: 1, layers: [tiles]});
 
     /** creation on a point marker on the map */
-    L.marker([latitude, longitude]).addTo(this.map);
+    L.marker([latitude, longitude])
+
+      /** adding the informations on map */
+      .addTo(this.map);
 
     /** applying a zoom on map */
     this.map.setZoom(4);
