@@ -32,7 +32,10 @@ export class ExampleComponent implements OnInit {
     this.map = L.map('map', {center: latlng, zoom: 0, layers: [tiles]});
 
     /** creation on a point marker on the map */
-    L.marker([-15.79350550, -47.88155210]).addTo(this.map);
+    L.marker([-15.79350550, -47.88155210])
+
+      /** adding the informations on map */
+      .addTo(this.map);
 
     /** applying a zoom on map */
     this.map.setZoom(4);
